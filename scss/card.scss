@@ -1,0 +1,30 @@
+@mixin card($mw,$color_border) {
+  
+  padding: 1.5rem;
+  background-color:white;
+  border-radius: 5Px;
+  max-width: $mw;
+  line-height: 2;
+  box-shadow: 0px 0px 10px $p_color;
+  border-top: 3px solid $color_border;
+  
+
+  h5{
+    color : $title_color;
+  }
+  p{
+    color:$p_color;
+    font-size: 0.8rem;
+  }
+  img{
+    margin-top: 2rem;
+    float:right;
+    margin-bottom: 1rem ;
+  }
+  @media screen and (max-width: 375px) {
+    margin-bottom: 1rem;
+    max-width: 322px;
+  }
+}
+
+
